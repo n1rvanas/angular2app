@@ -1,0 +1,17 @@
+<app-header></app-header>
+<h1>
+  {{title}}
+</h1>
+
+
+<input #noteText type="text"> <br>
+<button (click)="addNote( noteText )">Add note</button>
+<br>
+<br>
+<br>
+
+<ul>
+  <li *ngFor="let note of notes">
+    {{note.text}}
+  </li>
+</ul>
